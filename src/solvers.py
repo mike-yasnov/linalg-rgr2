@@ -1,7 +1,10 @@
 import numpy as np
 from numpy.linalg import LinAlgError
 
-def solve(A, b):
+def solve(
+        A: np.array, 
+        b: np.array
+        ) -> np.array | str:
     try:
         return np.linalg.solve(A, b)
     except LinAlgError as e:
@@ -11,7 +14,12 @@ def solve(A, b):
             return "бесконечное количество решений"
         
 
-def solve_gaussian(A, b, doPricing = True):
+def solve_gaussian(
+        A: np.array, 
+        b: np.array, 
+        doPricing: bool = True
+        ) -> np.array | str:
+    
     n = len(A)
     if b.size != n:
         raise ValueError("Неверный ввод. "+ "A & b.", b.size, n)
