@@ -32,6 +32,6 @@ def prepare_equation(
         if A is None or b is None:
             return "некорректный ввод"
         else:
-            return (A, b)
+            return (A, -1 * b)
     except Exception as e:
         return f"некорректный ввод: {e}"
