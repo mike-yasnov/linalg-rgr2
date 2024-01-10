@@ -22,12 +22,12 @@
 
 Клонируем репозиторий
 ~~~bash  
-  git clone https://link-to-project
+  git clone git@github.com:mike-yasnov/linalg-rgr2.git
 ~~~
 
 Переходим в репозиторий
 ~~~bash  
-  cd my-project
+  cd linalg-rgr2
 ~~~
 
 Создаем виртуальное окужение & устанавливаем зависимости
