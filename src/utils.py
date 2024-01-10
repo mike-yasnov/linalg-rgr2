@@ -2,7 +2,12 @@ import re
 import numpy as np 
 
 
-def prepare_equation(expression: str, matrices: np.array, vectors: np.array) -> (np.array, np.array):
+def prepare_equation(
+        expression: str, 
+        matrices: np.array, 
+        vectors: np.array
+        ) -> (np.array, np.array):
+    
     equation = re.split(r'[\+\=]', expression)
 
     variables = {}
