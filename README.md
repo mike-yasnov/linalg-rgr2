@@ -21,39 +21,53 @@
 ## Запуск проекта
 
 Клонируем репозиторий
-~~~bash  
-  git clone git@github.com:mike-yasnov/linalg-rgr2.git
-~~~
+```bash  
+git clone git@github.com:mike-yasnov/linalg-rgr2.git
+```
 
 Переходим в репозиторий
-~~~bash  
-  cd linalg-rgr2
-~~~
+```bash  
+cd linalg-rgr2
+```
 
 Создаем виртуальное окужение & устанавливаем зависимости
-~~~bash  
+```bash  
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
-~~~
+```
 
 Запустить
-~~~bash  
+```bash  
 python main.py
-~~~
-
-# Пример входных данных 
 ```
-Ac+Bc+Dx
-2 2
+# Пример входных данных 
+### !!! Комментарии при вводе нобходимо убрать (см пример в файле [input.txt](https://github.com/mike-yasnov/linalg-rgr2/blob/main/input.txt)) !!!
+```
+Ac+Bc+Dx \\ Само выражение
+2 2 \\ Размерность матрицы A
 1 2
 3 4
-2 2
+2 2 \\ Размерность матрицы B
 7 8
 9 10
-2 2
+2 2 \\ Размерность матрицы D
 13 14
 15 16
-2
+2 \\ Вектор c
 5 6
+```
+
+# Структура проекта
+
+```
+linalg-rgr2
+│
+├── main.py - Основной файл 
+├── input.txt - Входные данные
+│
+└── src
+    ├── readers.py - Чтение файла
+    ├── solvers.py - Решение СЛАУ
+    └── utils.py - Предобработка данных
 ```
