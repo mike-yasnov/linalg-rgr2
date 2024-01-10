@@ -4,7 +4,7 @@ from numpy.linalg import LinAlgError
 def solve(
         A: np.array, 
         b: np.array
-        ) -> np.array | str:
+        ) -> np.array:
     try:
         return np.linalg.solve(A, b)
     except LinAlgError as e:
@@ -18,7 +18,7 @@ def solve_gaussian(
         A: np.array, 
         b: np.array, 
         doPricing: bool = True
-        ) -> np.array | str:
+        ) -> np.array:
     
     n = len(A)
     if b.size != n:
