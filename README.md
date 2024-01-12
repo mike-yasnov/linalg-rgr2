@@ -1,8 +1,8 @@
-
 # Ргр №2 по линейной алгебре
 
-[![Pyhton](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://choosealicense.com/licenses/gpl-3.0/)  
-
+<img src="https://img.shields.io/badge/GIT-black?style=for-the-badge&logo=GIT&logoColor=F05032"/>
+<img src="https://img.shields.io/badge/PYTHON-black?style=for-the-badge&logo=python&logoColor=gold"/>
+<img src="https://img.shields.io/badge/numpy-black?style=for-the-badge&logo=numpy&logoColor=white"/>
 
 # Введение
 Выполнили:
