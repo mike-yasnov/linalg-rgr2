@@ -10,14 +10,13 @@ def main(file_name: str) -> str:
 
     expression, matrices, vectors = parse_input(input_lines)
     A, b = prepare_equation(expression, matrices, vectors)
-
     # Решение СЛАУ
     flag = int(input("Введите способ решения СЛАУ: \n1. Обычный\n2.Гаусс\nВаш вариант ответа: "))
     if flag == 1:
         x = solve(A, b)
     else:
         b = b.reshape(-1)
-        x = solve_gaussian(np.copy(A), np.copy(b), doPricing = False)
+        x = solve_gaussian(np.copy(A), np.copy(b), doPricing = True)
     if isinstance(x, str):
         return x
     else:
